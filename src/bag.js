@@ -1,5 +1,5 @@
-import InvalidArgumentException from '../exception/invalid-argument'
-import InternalErrorException from '../exception/internal-error'
+import InvalidArgumentException from './exception/invalid-argument'
+import InternalErrorException from './exception/internal-error'
 
 function copy(...args) {
   return Object.assign({}, ...args)

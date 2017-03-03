@@ -8,11 +8,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _invalidArgument = require('../exception/invalid-argument');
+var _invalidArgument = require('./exception/invalid-argument');
 
 var _invalidArgument2 = _interopRequireDefault(_invalidArgument);
 
-var _internalError = require('../exception/internal-error');
+var _internalError = require('./exception/internal-error');
 
 var _internalError2 = _interopRequireDefault(_internalError);
 

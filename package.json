@@ -6,9 +6,7 @@
   "scripts": {
     "test": "./node_modules/.bin/gulp test",
     "dev": "./node_modules/.bin/gulp watch:test",
-    "build": "./node_modules/.bin/gulp build",
-    "indexing": "./node_modules/.bin/gulp indexing",
-    "deploy": "npm run build && npm run indexing"
+    "deploy": "./node_modules/.bin/gulp deploy"
   },
   "repository": {
     "type": "git",

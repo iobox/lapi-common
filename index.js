@@ -1,7 +1,15 @@
-// AUTO GENERATED ==>
-var $exports = {};
-// <== AUTO GENERATED
-
+var $exports = {
+ "Bag": "bag.js",
+ "Base": "base.js",
+ "exception": {
+  "InternalErrorException": "exception/internal-error.js",
+  "InvalidArgumentException": "exception/invalid-argument.js",
+  "NotFoundException": "exception/not-found.js",
+  "NotImplementedException": "exception/not-implemented.js"
+ },
+ "Exception": "exception.js",
+ "Str": "str.js"
+};
 const distDir = 'dist';
 function include(file, name) {
   const pkg = require('./' + distDir + '/' + file);
