@@ -12,6 +12,10 @@ var $exports = {
   "NotImplementedException": "exception/not-implemented.js"
  },
  "Exception": "exception.js",
+ "extension": {
+  "ExtensionManager": "extension/manager.js"
+ },
+ "Extension": "extension.js",
  "Str": "str.js"
 };
 const distDir = 'dist';
