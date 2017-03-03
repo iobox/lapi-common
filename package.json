@@ -1,0 +1,32 @@
+{
+  "name": "lapi-common",
+  "version": "1.0.0",
+  "description": "Common classes for LAPI",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/gulp test",
+    "dev": "./node_modules/.bin/gulp watch:test",
+    "build": "./node_modules/.bin/gulp build",
+    "indexing": "./node_modules/.bin/gulp indexing",
+    "deploy": "npm run build && npm run indexing"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iobox/lapi-common.git"
+  },
+  "keywords": [
+    "lapi",
+    "common",
+    "base",
+    "str"
+  ],
+  "author": "Long Do <me@dotronglong.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iobox/lapi-common/issues"
+  },
+  "homepage": "https://github.com/iobox/lapi-common#readme",
+  "devDependencies": {
+    "lapi-dev": "^1.0.x"
+  }
+}
