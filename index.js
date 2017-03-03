@@ -16,6 +16,12 @@ var $exports = {
   "ExtensionManager": "extension/manager.js"
  },
  "Extension": "extension.js",
+ "logger": {
+  "ConsoleLogger": "logger/console.js",
+  "EmptyLogger": "logger/empty.js",
+  "FileLogger": "logger/file.js"
+ },
+ "Logger": "logger.js",
  "Str": "str.js"
 };
 const distDir = 'dist';
