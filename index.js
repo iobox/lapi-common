@@ -1,6 +1,10 @@
 var $exports = {
  "Bag": "bag.js",
  "Base": "base.js",
+ "di": {
+  "ContainerAware": "di/container-aware.js",
+  "Container": "di/container.js"
+ },
  "exception": {
   "InternalErrorException": "exception/internal-error.js",
   "InvalidArgumentException": "exception/invalid-argument.js",
