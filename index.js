@@ -1,4 +1,4 @@
-var $exports = {
+let $module = {
  "Bag": "bag.js",
  "Base": "base.js",
  "di": {
@@ -24,21 +24,15 @@ var $exports = {
  "Logger": "logger.js",
  "Str": "str.js"
 };
-const distDir = 'dist';
-function include(file, name) {
-  const pkg = require('./' + distDir + '/' + file);
-  return name === undefined ? pkg.default : pkg[name];
-}
-
-var exports = function ($exports) {
-  Object.keys($exports).forEach(function (name) {
-    if (typeof $exports[name] === 'object') {
-      exports($exports[name])
-    } else {
-      $exports[name] = include($exports[name])
+const publish = function ($object) {
+  Object.keys($object).forEach(function($key) {
+    if (typeof $object[$key] === 'string') {
+      $object[$key] = require('./dist/' + $object[$key]);
+    } else if (typeof $object[$key] === 'object') {
+      $object[$key] = publish($object[$key])
     }
   });
+  
+  return $object;
 };
-exports($exports);
-
-module.exports = $exports;
+module.exports = publish($module);
