@@ -28,7 +28,6 @@
     "lapi-dev": "^1.0.x"
   },
   "dependencies": {
-    "cli-color": "^1.2.0",
-    "fs": "^0.0.1-security"
+    "cli-color": "^1.2.0"
   }
 }
