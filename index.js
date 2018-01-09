@@ -18,8 +18,7 @@ let $module = {
  "Extension": "extension.js",
  "logger": {
   "ConsoleLogger": "logger/console.js",
-  "EmptyLogger": "logger/empty.js",
-  "FileLogger": "logger/file.js"
+  "EmptyLogger": "logger/empty.js"
  },
  "Logger": "logger.js",
  "Str": "str.js"
