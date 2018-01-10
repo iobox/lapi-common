@@ -1,4 +1,4 @@
-let $module = {
+let zddGyFtZzgNYmtQu = {
  "Bag": "bag.js",
  "Base": "base.js",
  "di": {
@@ -35,4 +35,4 @@ const publish = function ($object) {
   
   return $object;
 };
-module.exports = publish($module);
+module.exports = publish(zddGyFtZzgNYmtQu);
