@@ -1,4 +1,4 @@
-let FAdNMnEJgIzPZjeo = {
+var iUPOCLLVSpgKlCLN = {
  "Bag": "bag.js",
  "Base": "base.js",
  "di": {
@@ -17,16 +17,15 @@ let FAdNMnEJgIzPZjeo = {
  },
  "Extension": "extension.js",
  "logger": {
-  "ConsoleLogger": "logger/console.js",
   "EmptyLogger": "logger/empty.js"
  },
  "Logger": "logger.js",
  "Str": "str.js"
 };
-const publish = function ($object) {
+var publish = function ($object) {
   Object.keys($object).forEach(function($key) {
     if (typeof $object[$key] === 'string') {
-      let pkg = require('./dist/' + $object[$key]);
+      var pkg = require('./dist/' + $object[$key]);
       $object[$key] = typeof pkg.default !== 'undefined' ? pkg.default : pkg;
     } else if (typeof $object[$key] === 'object') {
       $object[$key] = publish($object[$key])
@@ -35,4 +34,4 @@ const publish = function ($object) {
   
   return $object;
 };
-module.exports = publish(FAdNMnEJgIzPZjeo);
+module.exports = publish(iUPOCLLVSpgKlCLN);
