@@ -24,10 +24,8 @@
     "url": "https://github.com/iobox/lapi-common/issues"
   },
   "homepage": "https://github.com/iobox/lapi-common#readme",
-  "pre-commit": "deploy",
   "devDependencies": {
-    "lapi-dev": "^1.0.x",
-    "pre-commit": "^1.2.2"
+    "lapi-dev": "^1.0.x"
   },
   "dependencies": {
     "cli-color": "^1.2.0"
