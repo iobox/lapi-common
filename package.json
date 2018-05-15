@@ -1,6 +1,6 @@
 {
   "name": "lapi-common",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Common classes for LAPI",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/iobox/lapi-common#readme",
   "devDependencies": {
-    "lapi-dev": "^1.0.x"
+    "lapi-dev": "~1.0.12"
   }
 }
